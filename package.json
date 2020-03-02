@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development"
+    "test": "jest",
+    "start": "webpack-dev-server --mode development",
+    "lint": "eslint .",
+    "build": "webpack --mode production"
   },
   "author": "",
   "license": "ISC",
