@@ -1,0 +1,190 @@
+body {
+  font-family: Roboto, Verdana, sans-serif;
+  background-color: rgb(217, 224, 224);
+ }
+ 
+ .container {
+   max-width: 600px;
+   border-radius: 4px;
+   background-color: white;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 150px;
+   padding: 30px 20px;
+ }
+ 
+ h2 {
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .header {
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 30px;
+ }
+ 
+ button {
+   background: #009688;
+   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24), 0px 0px 2px rgba(0, 0, 0, 0.12);
+   border-radius: 2px;
+   border: none;
+   color: white;
+ }
+ 
+ button:active {
+   background: linear-gradient(0deg, rgba(189, 189, 189, 0.3), rgba(189, 189, 189, 0.3)), #009688;
+   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.24), 0px 0px 8px rgba(0, 0, 0, 0.12);
+ }
+ 
+ .add {
+   box-sizing: border-box;
+   width: 30px;
+   height: 30px;
+ }
+ 
+ .hidden {
+   display: none;
+ }
+ 
+ .tickets {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+ }
+ 
+ .ticket-item {
+   position: relative;
+   margin-bottom: 20px;
+ }
+
+ .ticket-item-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+ }
+
+ .ticket-description {
+  margin-left: 15%;
+ }
+ 
+ .ticket-item:before {
+   position: absolute;
+   content: '';
+   display: block;
+   height: 2px;
+   width: 100%;
+   background: rgba(0, 0, 0, 0.26);
+   margin-top: -11px;
+ }
+ 
+ .ticket-item:first-child::before {
+   display: none;
+ }
+ 
+ .information {
+   display: inherit;
+   justify-content: space-between;
+   min-width: 400px;
+ }
+ 
+ .title {
+   width: 300px;
+   padding-right: 10%;
+ }
+ 
+ .check {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgba(189, 189, 189, 0.3);
+ }
+
+ .checked {
+   background-color: #009688;
+ }
+
+ .buttons {
+   display: flex;
+   flex-direction: row;
+ }
+ 
+ .buttons button {
+   width: 20px;
+   height: 20px;
+   padding: 0;
+   text-align: center;
+ }
+
+ #add-button {
+   padding: 10px;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ 
+ .edit {
+   margin-right: 3px;
+ }
+ 
+ .bg {
+   position: fixed;
+   z-index: 2;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   background-color: rgba(189, 189, 189, 0.3);
+ }
+ 
+ .modal {
+   position: absolute;
+   width: 400px;
+   border-radius: 4px;
+   background-color: white;
+   top:200px;
+   left:50%; 
+   margin-left:-200px;
+   padding: 30px 20px;
+   z-index: 3;
+ }
+ 
+ .modal form {
+   display: flex;
+   flex-flow: column nowrap;
+ }
+ 
+ .modal form label {
+   margin-bottom: 5px;
+   font-size: 90%;
+ }
+ 
+ .input {
+   margin-bottom: 20px;
+   border: none;
+   border-bottom: rgb(185, 185, 185) 2px solid;
+ }
+ 
+ .input:active, .input:focus {
+   border: none;
+   outline: none;
+   box-shadow: none;
+   border-bottom: #009688 2px solid;
+ }
+ 
+ .cancel {
+   position: absolute;
+   right: 10px;
+   top: 10px; 
+   width: 20px;
+   height: 20px;
+   padding: 0;
+ }
+ 
+ .submit {
+   margin-top: 20px;
+   padding-top: 5px;
+   padding-bottom: 5px;
+ }
