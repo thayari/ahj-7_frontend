@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="/src/css/styles.css" rel="stylesheet" type="text/css" />
+<link href="main.css" rel="stylesheet"></head>
+
+<body>
+  <div class="container">
+    <ul class="tickets">
+    </ul>
+    <button class="button" id="add-button">Добавить</button>
+  </div>
+  
+  <div class="bg hidden">
+    <div class="modal hidden" id="modal-add">
+      <form class="form-create-ticket">
+        <h3>Добавить тикет</h3>
+        <label for="title">Краткое описание</label>
+        <input class="input-field" id="add-name" name="name" required>
+        <label for="description">Подробное описание</label>
+        <input class="input-field" id="add-description" name="description" required>
+        <button class="button cancel">×</button>
+        <button class="button">OK</button>
+      </form>
+    </div>
+    <div class="modal hidden" id="modal-edit">
+      <form class="form-edit-ticket">
+        <h3>Редактировать тикет</h3>
+        <label for="title">Краткое описание</label>
+        <input class="input-field" id="edit-name" name="name" required>
+        <label for="description">Подробное описание</label>
+        <input class="input-field" id="edit-description" name="description" required>
+        <button class="button cancel">×</button>
+        <button class="button">OK</button>
+      </form>
+    </div>
+    <div class="modal hidden" id="modal-delete">
+      <p>Вы действительно хотите удалить эту запись?</p>
+      <button class="button cancel">×</button>
+      <button class="button ok">OK</button>
+    </div>
+  </div>
+  <script type="module" src="index.js"></script>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+
+</html>
